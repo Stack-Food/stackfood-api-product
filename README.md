@@ -1,4 +1,4 @@
-# 🧾 StackFood API
+# 🧾 StackFood API Product
 
 Sistema Backend para gerenciamento de pedidos e produtos em uma lanchonete com autoatendimento, desenvolvido como parte do **Tech Challenge** da formação em Arquitetura de Software.
 
