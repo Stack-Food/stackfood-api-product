@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "zHj40988bHCFveS9okK6ol3s9XWy4BtVZo7T+VBHHnQ=",
+  "Source": "StackFood.Products.API",
+  "BasePath": "_content/StackFood.Products.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
