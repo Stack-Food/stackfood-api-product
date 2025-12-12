@@ -67,4 +67,103 @@ public class CategoryTests
         category.DisplayOrder.Should().Be(2);
         category.UpdatedAt.Should().BeAfter(oldUpdatedAt);
     }
+
+    [Fact]
+    public void Constructor_ShouldThrowException_WhenNameIsWhitespace()
+    {
+        // Arrange & Act
+        Action act = () => new Category("   ", "Description", 1);
+
+        // Assert
+        act.Should().Throw<ArgumentException>()
+            .WithMessage("*Category name cannot be empty*");
+    }
+
+    [Fact]
+    public void Constructor_ShouldThrowException_WhenNameIsTooLong()
+    {
+        // Arrange
+        var longName = new string('A', 101);
+
+        // Act
+        Action act = () => new Category(longName, "Description", 1);
+
+        // Assert
+        act.Should().Throw<ArgumentException>()
+            .WithMessage("*Category name cannot exceed 100 characters*");
+    }
+
+    [Fact]
+    public void Update_ShouldThrowException_WhenNameIsNull()
+    {
+        // Arrange
+        var category = new Category("Lanche", "Description", 1);
+
+        // Act
+        Action act = () => category.Update(null!, "Description", 1);
+
+        // Assert
+        act.Should().Throw<ArgumentNullException>();
+    }
+
+    [Fact]
+    public void Update_ShouldThrowException_WhenNameIsEmpty()
+    {
+        // Arrange
+        var category = new Category("Lanche", "Description", 1);
+
+        // Act
+        Action act = () => category.Update("", "Description", 1);
+
+        // Assert
+        act.Should().Throw<ArgumentException>()
+            .WithMessage("*Category name cannot be empty*");
+    }
+
+    [Fact]
+    public void Update_ShouldThrowException_WhenDisplayOrderIsNegative()
+    {
+        // Arrange
+        var category = new Category("Lanche", "Description", 1);
+
+        // Act
+        Action act = () => category.Update("New Name", "Description", -1);
+
+        // Assert
+        act.Should().Throw<ArgumentException>()
+            .WithMessage("*Display order cannot be negative*");
+    }
+
+    [Fact]
+    public void Constructor_WithNullDescription_ShouldSucceed()
+    {
+        // Arrange & Act
+        var category = new Category("Lanche", null, 1);
+
+        // Assert
+        category.Description.Should().BeNull();
+    }
+
+    [Fact]
+    public void Update_WithNullDescription_ShouldSucceed()
+    {
+        // Arrange
+        var category = new Category("Lanche", "Old Description", 1);
+
+        // Act
+        category.Update("Bebida", null, 2);
+
+        // Assert
+        category.Description.Should().BeNull();
+    }
+
+    [Fact]
+    public void Constructor_WithZeroDisplayOrder_ShouldSucceed()
+    {
+        // Arrange & Act
+        var category = new Category("Lanche", "Description", 0);
+
+        // Assert
+        category.DisplayOrder.Should().Be(0);
+    }
 }

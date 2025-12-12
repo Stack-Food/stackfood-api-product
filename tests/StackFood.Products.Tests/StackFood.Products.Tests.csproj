@@ -7,6 +7,10 @@
 
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
+
+    <!-- Excluir Infrastructure do cálculo de cobertura (testes de integração) -->
+    <ExcludeByAttribute>Obsolete,GeneratedCodeAttribute,CompilerGeneratedAttribute</ExcludeByAttribute>
+    <ExcludeByFile>**/Migrations/**/*.cs,**/Infrastructure/**/*.cs</ExcludeByFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -30,7 +34,14 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\StackFood.Products.Domain\StackFood.Products.Domain.csproj" />
     <ProjectReference Include="..\..\src\StackFood.Products.Application\StackFood.Products.Application.csproj" />
-    <ProjectReference Include="..\..\src\StackFood.Products.Infrastructure\StackFood.Products.Infrastructure.csproj" />
+    <!-- Infrastructure removido do cálculo de cobertura - deve ter testes de integração separados -->
+    <!-- <ProjectReference Include="..\..\src\StackFood.Products.Infrastructure\StackFood.Products.Infrastructure.csproj" /> -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <SpecFlowFeatureFiles Update="Features\**\*.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+    </SpecFlowFeatureFiles>
   </ItemGroup>
 
 </Project>
