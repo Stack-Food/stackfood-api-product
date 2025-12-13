@@ -55,9 +55,9 @@ jobs:
       - name: Build and analyze
         shell: powershell
         run: |
-          ${{ runner.temp }}\scanner\dotnet-sonarscanner begin /k:"$env:SONAR_PROJECT_KEY" /o:"stack-food" /d:sonar.token="$env:SONAR_TOKEN" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml"
-          dotnet build --no-restore --configuration Release
-          dotnet test --no-build --configuration Release --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=./coverage/
+          ${{ runner.temp }}\scanner\dotnet-sonarscanner begin /k:"$env:SONAR_PROJECT_KEY" /o:"stack-food" /d:sonar.token="$env:SONAR_TOKEN" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths="coverage.xml"
+          dotnet build --no-restore --no-incremental --configuration Release
+          coverlet .\src\Tests\StackFood.Tests\bin\Release\net8.0\StackFood.UnitTests.dll --target "dotnet" --targetargs "test --no-build --configuration Release" -f=opencover -o="coverage.xml"
           ${{ runner.temp }}\scanner\dotnet-sonarscanner end /d:sonar.token="$env:SONAR_TOKEN"
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
