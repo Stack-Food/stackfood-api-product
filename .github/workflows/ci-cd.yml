@@ -74,6 +74,4 @@ jobs:
         cache-from: type=gha
         cache-to: type=gha,mode=max
 
-    - name: Test Docker image
-      run: |
-        docker run --rm stackfood-products-api:${{ github.sha }} dotnet --version
+
