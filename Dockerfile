@@ -8,12 +8,14 @@ COPY src/StackFood.Products.Domain/StackFood.Products.Domain.csproj src/StackFoo
 COPY src/StackFood.Products.Application/StackFood.Products.Application.csproj src/StackFood.Products.Application/
 COPY src/StackFood.Products.Infrastructure/StackFood.Products.Infrastructure.csproj src/StackFood.Products.Infrastructure/
 COPY src/StackFood.Products.API/StackFood.Products.API.csproj src/StackFood.Products.API/
+COPY tests/StackFood.Products.Tests/StackFood.Products.Tests.csproj tests/StackFood.Products.Tests/
 
 # Restore dependencies
 RUN dotnet restore
 
 # Copy all source code
 COPY src/ src/
+COPY tests/ tests/
 
 # Build the application
 WORKDIR /src/src/StackFood.Products.API
