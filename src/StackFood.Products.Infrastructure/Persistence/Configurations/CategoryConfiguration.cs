@@ -1,9 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using StackFood.Products.Domain.Entities;
+using System.Diagnostics.CodeAnalysis;
 
 namespace StackFood.Products.Infrastructure.Persistence.Configurations;
 
+[ExcludeFromCodeCoverage]
 public class CategoryConfiguration : IEntityTypeConfiguration<Category>
 {
     public void Configure(EntityTypeBuilder<Category> builder)

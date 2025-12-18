@@ -1,9 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using StackFood.Products.Application.Interfaces;
 using StackFood.Products.Domain.Entities;
+using System.Diagnostics.CodeAnalysis;
 
 namespace StackFood.Products.Infrastructure.Persistence.Repositories;
 
+[ExcludeFromCodeCoverage]
 public class ProductRepository : IProductRepository
 {
     private readonly ProductsDbContext _context;

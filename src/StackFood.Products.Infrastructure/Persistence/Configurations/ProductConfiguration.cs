@@ -2,9 +2,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using StackFood.Products.Domain.Entities;
 using StackFood.Products.Domain.ValueObjects;
+using System.Diagnostics.CodeAnalysis;
 
 namespace StackFood.Products.Infrastructure.Persistence.Configurations;
 
+[ExcludeFromCodeCoverage]
 public class ProductConfiguration : IEntityTypeConfiguration<Product>
 {
     public void Configure(EntityTypeBuilder<Product> builder)
