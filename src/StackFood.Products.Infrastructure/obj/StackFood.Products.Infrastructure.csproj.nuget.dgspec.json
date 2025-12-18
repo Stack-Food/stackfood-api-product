@@ -1,39 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Infrastructure\\StackFood.Products.Infrastructure.csproj": {}
+    "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Infrastructure/StackFood.Products.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Application\\StackFood.Products.Application.csproj": {
+    "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Application/StackFood.Products.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Application\\StackFood.Products.Application.csproj",
+        "projectUniqueName": "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Application/StackFood.Products.Application.csproj",
         "projectName": "StackFood.Products.Application",
-        "projectPath": "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Application\\StackFood.Products.Application.csproj",
-        "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Application\\obj\\",
+        "projectPath": "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Application/StackFood.Products.Application.csproj",
+        "packagesPath": "/home/luizf/.nuget/packages/",
+        "outputPath": "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Application/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/luizf/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Domain\\StackFood.Products.Domain.csproj": {
-                "projectPath": "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Domain\\StackFood.Products.Domain.csproj"
+              "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Domain/StackFood.Products.Domain.csproj": {
+                "projectPath": "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Domain/StackFood.Products.Domain.csproj"
               }
             }
           }
@@ -48,7 +43,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -64,37 +59,42 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.112/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Domain\\StackFood.Products.Domain.csproj": {
+    "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Domain/StackFood.Products.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Domain\\StackFood.Products.Domain.csproj",
+        "projectUniqueName": "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Domain/StackFood.Products.Domain.csproj",
         "projectName": "StackFood.Products.Domain",
-        "projectPath": "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Domain\\StackFood.Products.Domain.csproj",
-        "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Domain\\obj\\",
+        "projectPath": "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Domain/StackFood.Products.Domain.csproj",
+        "packagesPath": "/home/luizf/.nuget/packages/",
+        "outputPath": "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Domain/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/luizf/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -113,7 +113,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -129,48 +129,53 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.112/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Infrastructure\\StackFood.Products.Infrastructure.csproj": {
+    "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Infrastructure/StackFood.Products.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Infrastructure\\StackFood.Products.Infrastructure.csproj",
+        "projectUniqueName": "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Infrastructure/StackFood.Products.Infrastructure.csproj",
         "projectName": "StackFood.Products.Infrastructure",
-        "projectPath": "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Infrastructure\\StackFood.Products.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Infrastructure\\obj\\",
+        "projectPath": "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Infrastructure/StackFood.Products.Infrastructure.csproj",
+        "packagesPath": "/home/luizf/.nuget/packages/",
+        "outputPath": "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Infrastructure/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/luizf/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Application\\StackFood.Products.Application.csproj": {
-                "projectPath": "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Application\\StackFood.Products.Application.csproj"
+              "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Application/StackFood.Products.Application.csproj": {
+                "projectPath": "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Application/StackFood.Products.Application.csproj"
               },
-              "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Domain\\StackFood.Products.Domain.csproj": {
-                "projectPath": "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Domain\\StackFood.Products.Domain.csproj"
+              "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Domain/StackFood.Products.Domain.csproj": {
+                "projectPath": "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Domain/StackFood.Products.Domain.csproj"
               }
             }
           }
@@ -185,7 +190,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -213,12 +218,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.112/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

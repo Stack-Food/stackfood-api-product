@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   build:
-    name: Build and analyze
+    name: Run SonarQube analysis
     runs-on: windows-latest
     steps:
       - name: Set up JDK 17

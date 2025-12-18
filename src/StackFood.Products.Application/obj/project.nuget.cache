@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "9VJN27aVdFw=",
+  "dgSpecHash": "J3p+UunmNkA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\rodri\\Documents\\stack-food\\stackfood-api-product\\src\\StackFood.Products.Application\\StackFood.Products.Application.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/luizf/fiap/stackfood-api-product/src/StackFood.Products.Application/StackFood.Products.Application.csproj",
+  "expectedPackageFiles": [
+    "/home/luizf/.nuget/packages/microsoft.netcore.app.ref/8.0.22/microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "/home/luizf/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.22/microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512"
+  ],
   "logs": []
 }
