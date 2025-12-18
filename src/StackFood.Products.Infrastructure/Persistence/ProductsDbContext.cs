@@ -1,8 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using StackFood.Products.Domain.Entities;
+using System.Diagnostics.CodeAnalysis;
 
 namespace StackFood.Products.Infrastructure.Persistence;
 
+[ExcludeFromCodeCoverage]
 public class ProductsDbContext : DbContext
 {
     public ProductsDbContext(DbContextOptions<ProductsDbContext> options) : base(options) { }
