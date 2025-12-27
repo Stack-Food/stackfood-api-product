@@ -7,7 +7,7 @@ metadata:
     app.kubernetes.io/part-of: stackfood
 data:
   # Database Configuration
-  ConnectionStrings__DefaultConnection: "Host=stackfood-postgres.database.svc.cluster.local;Port=5432;Database=stackfood_products;Username=postgres"
+  ConnectionStrings__DefaultConnection: "Host=stackfood-db.c7u6s4akq7qg.us-east-1.rds.amazonaws.com;Port=5432;Database=stackfood_products;Username=stackfood;Password=postgres"
 
   # Application Settings
   ASPNETCORE_ENVIRONMENT: "Production"
