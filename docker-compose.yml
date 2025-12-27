@@ -28,7 +28,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8080
-      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=products_db;Username=postgres;Password=postgres
+      - ConnectionStrings__DefaultConnection=Host=stackfood-db.c3y2wwk4o98q.us-east-1.rds.amazonaws.com;Port=5432;Database=products_db;Username=stackfood;Password=postgres
     ports:
       - "8080:8080"
     depends_on:

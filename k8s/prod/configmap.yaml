@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: stackfood-products-config
+  labels:
+    app.kubernetes.io/name: stackfood-products
+    app.kubernetes.io/part-of: stackfood
+data:
+  # Database Configuration
+  ConnectionStrings__DefaultConnection: "Host=stackfood-postgres.database.svc.cluster.local;Port=5432;Database=stackfood_products;Username=postgres"
+
+  # Application Settings
+  ASPNETCORE_ENVIRONMENT: "Production"
+  ASPNETCORE_URLS: "http://+:8080"

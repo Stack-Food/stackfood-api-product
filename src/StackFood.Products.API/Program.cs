@@ -45,6 +45,10 @@ namespace StackFood.Products.API
             builder.Services.AddScoped<UpdateProductUseCase>();
             builder.Services.AddScoped<DeleteProductUseCase>();
             builder.Services.AddScoped<GetAllCategoriesUseCase>();
+            builder.Services.AddScoped<GetCategoryByIdUseCase>();
+            builder.Services.AddScoped<CreateCategoryUseCase>();
+            builder.Services.AddScoped<UpdateCategoryUseCase>();
+            builder.Services.AddScoped<DeleteCategoryUseCase>();
 
             // Health Checks
             builder.Services.AddHealthChecks()
