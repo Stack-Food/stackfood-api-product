@@ -1,11 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using StackFood.Products.Application.DTOs;
 using StackFood.Products.Application.UseCases;
+using System.Diagnostics.CodeAnalysis;
 
 namespace StackFood.Products.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[ExcludeFromCodeCoverage]
 public class CategoriesController : ControllerBase
 {
     private readonly GetAllCategoriesUseCase _getAllCategoriesUseCase;
