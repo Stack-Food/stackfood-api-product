@@ -28,7 +28,7 @@ namespace StackFood.Products.API
                 });
                 c.AddServer(new OpenApiServer
                 {
-                    Url = "http://api.stackfood.com.br/products",
+                    Url = "https://api.stackfood.com.br/products",
                 });
             });
 
