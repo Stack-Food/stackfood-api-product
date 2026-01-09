@@ -85,13 +85,9 @@ namespace StackFood.Products.API
             }
 
             // Configure the HTTP request pipeline
-            app.UsePathBase("/products");
-            
             app.UseSwagger();
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/products/swagger/v1/swagger.json", "StackFood Products API v1");
-            });
+            app.UseSwaggerUI();
+
 
             app.UseCors("AllowAll");
 
