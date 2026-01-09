@@ -5,7 +5,7 @@ using StackFood.Products.Application.UseCases;
 namespace StackFood.Products.API.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class ProductsController : ControllerBase
 {
     private readonly GetAllProductsUseCase _getAllProductsUseCase;

@@ -6,7 +6,7 @@ using System.Diagnostics.CodeAnalysis;
 namespace StackFood.Products.API.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 [ExcludeFromCodeCoverage]
 public class CategoriesController : ControllerBase
 {
