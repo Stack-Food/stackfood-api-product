@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using StackFood.Products.Application.Interfaces;
 using StackFood.Products.Application.UseCases;
 using StackFood.Products.Infrastructure.Persistence;
@@ -24,6 +25,10 @@ namespace StackFood.Products.API
                     Title = "StackFood Products API",
                     Version = "v1",
                     Description = "API for managing products and categories"
+                });
+                c.AddServer(new OpenApiServer
+                {
+                    Url = "http://api.stackfood.com.br/products",
                 });
             });
 
